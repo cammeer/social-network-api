@@ -4,20 +4,8 @@ const thoughtController = {
     // get all
     getAllThoughts(req, res) {
         Thought.find({})
-            .populate({
-                path: "reactions",
-                select: "-__v",
-            })
-            .populate({
-                path: "thoughts",
-                select: "-__v",
-            })
-            .select("-__v")
-            .then((dbThoughtData) => res.json(dbThoughtData))
-            .catch((err) => {
-                console.log(err);
-                res.status(400).json(err);
-            });
+            .then((thought) => res.json(thought))
+            .catch((err) => res.status(500).json(err));
     },
     // get thought by ID
     getThoughtById({ params }, res) {
