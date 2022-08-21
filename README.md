@@ -23,7 +23,7 @@ Installation requires MongoDB, mongoose, express, moment, and nodemon. Contact m
 
 ## Usage
 
-Here's a link to a video showing basic operation: [Google Drive Link]()
+Here's a link to a video showing basic operation: [Google Drive Link](https://watch.screencastify.com/v/KpA0fwex7v9NM0ovnxGh)
 
 ## License
 
@@ -32,7 +32,7 @@ This project is [MIT](https://github.com/cammeer/next-progress-bar/blob/main/LIC
 
 ## Contributions
 
-I was the only contributor for this project so far. If you would like to contribute, see my email below.
+I was the only contributor to this project. If you would like to contribute, see my email below.
 
 ## Tech
 
