@@ -4,7 +4,7 @@
 
 ## Description
 
-The purpose of this project was to learn how to create the API back end for social networking platform. Note that there is no front end code in this repository.
+The purpose of this project was to build an API for a social network web application where users can share their thoughts, react to friends’ thoughts, and create a friend list.
 
 ![Insomnia](./Insomnia.png)
 
@@ -38,9 +38,9 @@ I was the only contributor for this project so far. If you would like to contrib
 
 - JavaScript
 - Node.js
-- MongoDB
-- Mongoose
-- Express.js
+- MongoDB database
+- Mongoose ODM
+- Express.js for routing
 - Nodemon
 - Moment.js
 - Insomnia
