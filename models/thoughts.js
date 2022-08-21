@@ -9,7 +9,7 @@ const reactionSchema = new Schema({
     reactionBody: {
         type: String,
         required: true,
-        maxlength: 500,
+        maxlength: 280,
     },
     username: {
         type: String,
@@ -26,7 +26,7 @@ const reactionSchema = new Schema({
     },
 });
 
-const thoughtsSchema = new Schema({
+const thoughtSchema = new Schema({
     thoughtText: {
         type: String,
         required: true,
@@ -50,11 +50,11 @@ const thoughtsSchema = new Schema({
     id: false,
 });
 
-// count reactions / replies
-thoughtsSchema.virtual("reactionCount").get(function() {
+// get total count of reactions and replies on retrieval
+thoughtSchema.virtual("reactionCount").get(function() {
     return this.reactions.length;
 });
 
-const Thoughts = model("Thoughts", thoughtsSchema);
+const Thought = model("Thought", thoughtSchema);
 
-module.exports = thoughts;
+module.exports = Thought;
